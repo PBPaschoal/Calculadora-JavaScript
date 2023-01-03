@@ -9,10 +9,10 @@ class Calculator {
     this.currentOperation = "";
   }
 
-  // add digit to calculator screen
+  // Adicionar dígito à tela da calculadora
   addDigit(digit) {
     console.log(digit);
-    // Check if number already has a dot
+    // Verifique se o número já tem um ponto
     if (digit === "." && this.currentOperationText.innerText.includes(".")) {
       return;
     }
@@ -21,18 +21,18 @@ class Calculator {
     this.updateScreen();
   }
 
-  // process all calculator operations
+  // Processar todas as operações da calculadora
   processOperation(operation) {
-    // Check if current value is empty
+    // Verifique se o valor atual está vazio
     if (this.currentOperationText.innerText === "" && operation !== "C") {
-      // Change operation
+      // Alterar operação
       if (this.previousOperationText.innerText !== "") {
         this.changeOperation(operation);
       }
       return;
     }
 
-    // Get current and previous values
+    // Obter valores atuais e anteriores
     let operationValue;
     let previous = +this.previousOperationText.innerText.split(" ")[0];
     let current = +this.currentOperationText.innerText;
@@ -71,7 +71,7 @@ class Calculator {
     }
   }
 
-  // Change values of calculator screen
+  // Alterar valores da tela da calculadora
   updateScreen(
     operationValue = null,
     operation = null,
@@ -115,13 +115,13 @@ class Calculator {
     this.currentOperationText.innerText = "";
   }
 
-  // Clear all operations
+  // Limpar todas as operações
   processClearOperator() {
     this.currentOperationText.innerText = "";
     this.previousOperationText.innerText = "";
   }
 
-  // Process an operation
+  // Processar uma operação
   processEqualOperator() {
     let operation = this.previousOperationText.innerText.split(" ")[1];
 
