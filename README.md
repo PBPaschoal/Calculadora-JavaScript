@@ -1,7 +1,7 @@
 # Calculadora JavaScript
 Calculadora em HTML5, CSS3 e JS. 
 
-Com ajuda do vídeo aula feito pelo Matheus Battisti, consegui desenvolver essa calculadora em JS.
+Com ajuda do vídeo aula feito pelo [Matheus Battisti](https://www.youtube.com/watch?v=KCfaPZ2t2yA), consegui desenvolver essa calculadora em JS.
 
 # MARCAÇÃO | PROGRAMAÇÃO | FRAMEWORK | TECH:
  
